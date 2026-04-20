@@ -80,7 +80,7 @@ function SignUp() {
                 <form className="formulario_registro" onSubmit={handleContinuar}>
                     <section className="mail">
                         <p>
-                            <img src="/iconos/envelope.svg" id="icono_mail" alt="Mail" />
+                            <img src="../public/img/Iconos/envelope.svg" id="icono_mail" alt="Mail" />
                             Mail
                         </p>
                         <input
@@ -94,7 +94,7 @@ function SignUp() {
 
                     <section className="nombre_usuario">
                         <p>
-                            <img src="/iconos/user.svg" id="icono_user" alt="Usuario" />
+                            <img src="../public/img/Iconos/user.svg" id="icono_user" alt="Usuario" />
                             Nombre de usuario
                         </p>
                         <input
@@ -108,7 +108,7 @@ function SignUp() {
 
                     <section className="contra">
                         <p>
-                            <img src="/iconos/lock.svg" id="icono_contra" alt="Contraseña" />
+                            <img src="../public/img/Iconos/lock.svg" id="icono_contra" alt="Contraseña" />
                             Contraseña
                         </p>
                         <input
@@ -130,18 +130,18 @@ function SignUp() {
                         />
                         He leído y acepto los Términos y Condiciones
                     </p>
+                </form>
 
-                    <button className="boton_inicio" type="submit">
+                    <button className="boton_inicio" id="btn-login" type="submit">
                         Continuar
                     </button>
-                </form>
 
                 <span className="separador">o</span>
 
-                <button className="boton_google" type="button" onClick={handleGoogle}>
-                    <img src="/img logo/google.png" width="20" height="20" alt="Google" />
-                    Continuar con Google
-                </button>
+            <button className="boton_google" type="button" onClick={handleGoogle}>
+                <img src="../public/img/Logos/google.webp" width="20" height="20" alt="Google" />
+                Continuar con Google
+            </button>
 
                 {mensaje && <p className="mensaje_error">{mensaje}</p>}
             </section>

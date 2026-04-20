@@ -9,14 +9,14 @@ function Index() {
         <>
             <section className="intro">
 
-                <img src="../public/img/Logos/Isologo.jpg" id="logo_intro"></img>
+                <img src="../public/img/Logos/Isologo.png" className="logo_intro"></img>
                 <h1>Quórum</h1>
                 <p>Juntarse como nunca antes</p>
-                <section class="botones_intro">
-                    <button className="btn btn--primary" id="btn-login" onClick={() => navigate('/log-in')}>
+                <section className="botones_intro">
+                    <button className="btn-login" onClick={() => navigate('/log-in')}>
                         Iniciar sesión
                     </button>
-                    <button className="btn btn--primary" id="btn-register" onClick={() => navigate('/sign-up')}>
+                    <button className="btn-register" onClick={() => navigate('/sign-up')}>
                         Registrarse
                     </button>
                 </section>

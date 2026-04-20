@@ -1,0 +1,282 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Cash Market';
+  src: url('../public/fonts/CashMarket-BoldRounded.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Utendo';
+  src: url('../public/fonts/Utendo-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*INTRODUCCIÓN*/
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.intro {
+  min-height: 100vh;
+  background: linear-gradient(160deg, #D74BD7 11%, #7CEBFF 91%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro h1 {
+  font-family: 'Cash Market';
+}
+
+.intro p {
+  font-family: 'Utendo';
+}
+
+#logo_intro {
+  width: 17%;
+}
+
+.botones_intro {
+  display: grid;
+  width: min(60%, 280px);
+}
+
+.intro button {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  background-color: #121338;
+  padding: clamp(10px, 3vw, 16px) 0;
+  font-family: 'Utendo';
+}
+
+/*INICIO Y REGISTRO (p1 y p2)*/
+.inicio_sesion,
+.registro,
+.registro_p2 {
+  min-height: 100vh;
+  background: linear-gradient(160deg, #D74BD7 11%, #7CEBFF 91%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 8%;
+}
+
+.inicio_sesion h1 {
+  font-family: 'Cash Market';
+}
+
+.formulario_inicio,
+.formulario_registro,
+.formulario_registro_p2 {
+  width: 100%;
+  max-width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mail,
+.nombre_usuario,
+.contra,
+.nacimiento,
+.direccion,
+.img_perfil {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.formulario_inicio img,
+.formulario_registro img,
+.formulario_registro_p2 img {
+  width: 3%;
+  min-width: 12px;
+}
+
+.mail p,
+.nombre_usuario p,
+.contra p,
+.nacimiento p,
+.direccion p,
+.img_perfil p {
+  margin: 0;
+  font-family: 'Utendo';
+
+}
+
+.mail input,
+.nombre_usuario input,
+.contra input,
+.nacimiento input,
+.direccion input {
+  padding: 4% 4%;
+  border-radius: 10px;
+  border: none;
+}
+
+.boton_inicio {
+  width: 100%;
+  max-width: 75%;
+  margin-top: 15%;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  background-color: #121338;
+  padding: 4%;
+  cursor: pointer;
+  font-family: 'Utendo';
+}
+
+/*Ver los hoovers*/
+.boton_inicio:hover {
+  background-color: #1e1f5c;
+}
+
+.separador,
+.ahora_no {
+  margin: 3% 0;
+  color: #1a1a2e;
+  font-family: 'Utendo';
+}
+
+.ahora_no {
+  border: none;
+  background: none;
+  text-decoration: underline;
+}
+
+.boton_google {
+  width: 100%;
+  max-width: 75%;
+  border-radius: 10px;
+  border: none;
+  padding: 3.5% 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: 'Utendo';
+}
+
+/*Ver los hoovers*/
+.boton_google:hover {
+  background-color: #f5f5f5;
+}
+
+
+/*GASTOS*/
+.nav-pills {
+  background: #ccc;
+  border-radius: 20px;
+  padding: 4px;
+}
+
+.nav-pills .nav-link {
+  border-radius: 20px;
+  color: #000;
+}
+
+.nav-pills .nav-link.active {
+  background: white;
+  transition: 0.3s;
+}
+
+/*RECOMENDACIÓN DE LUGARES*/
+
+.recomendacion_lugares {
+  background-color: #121338;
+  margin: 0;
+  min-height: 100vh;
+  padding-top: 1px;
+}
+
+.seccion_lugar {
+  background-color: #d9d9d9;
+  border-radius: 25px;
+  margin: 5%;
+  padding-bottom: 3%;
+}
+
+.seccion_lugar h2,
+.ubi_lugar,
+.estrellas {
+  text-align: center;
+}
+
+.seccion_lugar h2 {
+  margin: 0;
+}
+
+.ubi_lugar p {
+  margin: 0;
+}
+
+.recomendacion_lugares h1 {
+  color: #ffffff;
+  text-align: center;
+}
+
+.ubi_lugar {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+#icono_ubi {
+  width: 5%;
+}
+
+#img_lugar {
+  width: 100%;
+  height: auto;
+  border-radius: 25px 25px 0px 0px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  /*probar sacarlo si queda mal la img*/
+}
+
+.estrellas img {
+  width: 7%;
+}
+
+.grilla_lugares {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
+/*FOOTER*/
+#home_menu,
+#map_menu,
+#settings_menu {
+  width: 7%;
+  height: auto;
+  filter: invert()
+}
+
+footer {
+  background-color: #2A2356;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  border-top: 10px #D74BD7;
+  padding: 4%;
+}

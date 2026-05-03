@@ -24,28 +24,22 @@ function InicioGrupo() {
         if (error) return
         setEvento(data)
     }
-    async function traerPropuestas() {
-        const { data, error } = await supabase
-            .from('propuesta_juntada')
-            .select('*')
-            .eq('id_grupo', id)
-            .gt('fecha_hora_propuesta', new Date().toISOString())
-            .order('fecha_hora_propuesta', { ascending: true })
 
-        return (
-            <div>
-                <h1>Próximas juntadas</h1>
-                {evento && (
-                    <div>
-                        <h2>{evento.nombre}</h2>
-                    </div>
-                )}
-                <button key={id} className="grupo-item" onClick={() => navigate(`/proponer-juntada/${id}`)}>
-                    Proponer Juntada
-                </button>
-            </div>
-        )
-    }
+    return (
+        <div>
+            <h1>Próximas juntadas</h1>
+            {evento ? (
+                <div>
+                    <h2>{evento.nombre}</h2>
+                </div>
+            ) : (
+                <p>No hay juntadas próximas</p>
+            )}
+            <button onClick={() => navigate(`/proponer-juntada/${id}`)}>
+                Proponer Juntada
+            </button>
+        </div>
+    )
 }
 
 export default InicioGrupo

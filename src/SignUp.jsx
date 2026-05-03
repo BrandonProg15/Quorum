@@ -130,11 +130,12 @@ function SignUp() {
                         />
                         He leído y acepto los Términos y Condiciones
                     </p>
-                </form>
-
+                    
                     <button className="boton_inicio" id="btn-login" type="submit">
                         Continuar
                     </button>
+
+                </form>
 
                 <span className="separador">o</span>
 

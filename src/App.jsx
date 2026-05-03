@@ -5,6 +5,9 @@ import { useState } from 'react'
 import Inicio from './Inicio.jsx'
 import LogIn from './LogIn.jsx'
 import Configuracion from './Configuracion.jsx'
+import InicioGrupo from './InicioGrupo.jsx'
+import CrearGrupo from './CrearGrupo.jsx'
+import ProponerJuntada from './ProponerJuntada.jsx'
 
 import Index from './index.jsx'
 
@@ -17,6 +20,8 @@ function App() {
         <Route path="/inicio" element={<Inicio />} />
         <Route path="/log-in" element={<LogIn />} />
         <Route path="/configuracion" element={<Configuracion />} />
+        <Route path="/grupo/:id" element={<InicioGrupo />} />
+        <Route path="/proponer-juntada/:id" element={<ProponerJuntada />} />
       </Routes>
     </BrowserRouter>
   )

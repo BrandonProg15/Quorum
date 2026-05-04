@@ -20,7 +20,7 @@ function Configuracion() {
             .single()
 
         if (error) return
-        setUsuario(data)
+        setUsuario({ ...data, id: user.id }) 
     }
 
     const handleCerrarSesion = async () => {
@@ -32,8 +32,10 @@ function Configuracion() {
         <div>
             {usuario && (
                 <div>
-                    <p>{usuario.nombre} {usuario.apellido}</p>
-                    <p>@{usuario.username}</p>
+                    <button onClick={() => navigate(`/configuracion/${usuario.id}`)}>
+                        <p>{usuario.nombre} {usuario.apellido}</p>
+                        <p>@{usuario.username}</p>
+                    </button>
                 </div>
             )}
 

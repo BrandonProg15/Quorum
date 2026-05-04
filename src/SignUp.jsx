@@ -39,6 +39,8 @@ function SignUp() {
                 username,
                 nombre,
                 apellido,
+                direccion: direccion || null,
+                foto_perfil: fotoPerfil ? URL.createObjectURL(fotoPerfil) : null,
                 cumpleanos: fechaCumpleaños || null,
             })
 

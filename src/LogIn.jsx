@@ -55,7 +55,7 @@ function LogIn() {
 
                 <section className="contra">
                     <p>
-                        <img src="../public/img/Iconos/lock.svg" id="icono_contra"/>
+                        <img src="../public/img/Iconos/lock.svg" id="icono_contra" />
                         Contraseña
                     </p>
                     <input
@@ -66,11 +66,12 @@ function LogIn() {
                         required
                     />
                 </section>
-            </form>
-
-                <button className="boton_inicio" id = "btn-login" type="submit" disabled={cargando}>
+                <button className="boton_inicio" id="btn-login" type="submit" disabled={cargando}>
                     {cargando ? 'Iniciando sesión...' : 'Continuar'}
                 </button>
+            </form>
+
+
             <span className="separador">o</span>
 
             <button className="boton_google" type="button" onClick={handleGoogle}>

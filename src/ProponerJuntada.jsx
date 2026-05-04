@@ -77,7 +77,7 @@ function ProponerJuntada({ idGrupo, onCreado }) {
             )}
 
 
-             <button type="submit" key={id} className="grupo-item" onClick={() => navigate(`/votaciones/${id}`)}>
+             <button type="submit" key={idGrupo} className="grupo-item" onClick={() => navigate(`/votaciones/${idGrupo}`)}>
                     Crear encuesta
                 </button>
         </form>
